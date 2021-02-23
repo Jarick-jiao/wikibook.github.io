@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://jarick-jiao.github.io/wikibook.github.io/categories/DDD/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://jarick-jiao.github.io/wikibook.github.io/posts/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -31,6 +38,13 @@
   </url>
   
   <url>
+    <loc>https://jarick-jiao.github.io/wikibook.github.io/categories/TTT/</loc>
+    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://jarick-jiao.github.io/wikibook.github.io/tags/%E4%B8%93%E4%B8%9A%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -45,7 +59,7 @@
   </url>
   
   <url>
-    <loc>https://jarick-jiao.github.io/wikibook.github.io/series/%E5%8D%9A%E5%AE%A2-guide/</loc>
+    <loc>https://jarick-jiao.github.io/wikibook.github.io/series/%E5%8D%9A%E5%AE%A2-Guide/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
