@@ -41,6 +41,7 @@ jobs:
 
       - name: 部署
         run:  |
+          cd ../public
           git config --global user.email jwqworking@outlook.com
           git config --global user.name Jarick-jiao
           git add -A
