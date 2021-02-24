@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>知识库系统</title>
+    <title>Jarick Blog Book</title>
     <link>https://jarick-jiao.github.io/wikibook.github.io/</link>
-    <description>Recent content on 知识库系统</description>
+    <description>Recent content on Jarick Blog Book</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>yz-intelligence.com</copyright>
+    <copyright>Jarick_Blog_Book</copyright>
     <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://jarick-jiao.github.io/wikibook.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>知识库相关</title>
+      <title>与我有关</title>
       <link>https://jarick-jiao.github.io/wikibook.github.io/about/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>知识库管理第一篇</title>
+      <title>开篇第一课</title>
       <link>https://jarick-jiao.github.io/wikibook.github.io/2021/02/first/</link>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
