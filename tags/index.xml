@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Jarick Blog Book</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Jarick_Blog_Book</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Feb 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://jarick-jiao.github.io/wikibook.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Hugo site build</title>
       <link>https://jarick-jiao.github.io/wikibook.github.io/2021/02/hugosite/</link>
-      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jarick-jiao.github.io/wikibook.github.io/2021/02/hugosite/</guid>
       <description>&lt;p&gt;Hugo site to Github Pages for Github Actions&lt;/p&gt;</description>
