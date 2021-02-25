@@ -39,7 +39,7 @@
 <meta itemprop="name" content="Hugo site build">
 <meta itemprop="description" content="Hugo site to Github Pages for Github Actions"><meta itemprop="datePublished" content="2021-02-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1751">
+<meta itemprop="wordCount" content="2163">
 <meta itemprop="keywords" content="Hugo 建站," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo site build"/>
 <meta name="twitter:description" content="Hugo site to Github Pages for Github Actions"/>
@@ -143,7 +143,7 @@
     <h3 class="widget-title">公告</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>oJarick Blog Book</p>
+            <div class="content"><p>Jarick Blog Book</p>
             </div>
         </div>
     </div>
@@ -318,8 +318,8 @@ function tagCloud(where, min, max) {
 			<span id="busuanzi_value_page_pv">0</span>
 		</span>
 	</span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1751字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2163字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -341,7 +341,74 @@ function tagCloud(where, min, max) {
 <ol>
 <li>Hugo 下载： <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
 <li>创建Hugo工作目录:  mkdir GitHubRepo ; cd GitHubRepo</li>
+<li>hugo &ndash;help</li>
 </ol>
+<pre><code class="language-shell">Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io/.
+
+Usage:
+  hugo [flags]
+  hugo [command]
+
+Available Commands:
+  config      Print the site configuration
+  convert     Convert your content to different formats
+  deploy      Deploy your site to a Cloud provider.
+  env         Print Hugo version and environment info
+  gen         A collection of several useful generators.
+  help        Help about any command
+  import      Import your site from others.
+  list        Listing out various types of content
+  mod         Various Hugo Modules helpers.
+  new         Create new content for your site
+  server      A high performance webserver
+  version     Print the version number of Hugo
+
+Flags:
+  -b, --baseURL string             hostname (and path) to the root, e.g. http://spf13.com/
+  -D, --buildDrafts                include content marked as draft
+  -E, --buildExpired               include expired content
+  -F, --buildFuture                include content with publishdate in the future
+      --cacheDir string            filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --cleanDestinationDir        remove files from destination not found in static directories
+      --config string              config file (default is path/config.yaml|json|toml)
+      --configDir string           config dir (default &quot;config&quot;)
+  -c, --contentDir string          filesystem path to content directory
+      --debug                      debug output
+  -d, --destination string         filesystem path to write files to
+      --disableKinds strings       disable different kind of pages (home, RSS etc.)
+      --enableGitInfo              add Git revision, date and author info to the pages
+  -e, --environment string         build environment
+      --forceSyncStatic            copy all files when static is changed.
+      --gc                         enable to run some cleanup tasks (remove unused cache files) after the build
+  -h, --help                       help for hugo
+      --i18n-warnings              print missing translations
+      --ignoreCache                ignores the cache directory
+      --ignoreVendor               ignores any _vendor directory
+      --ignoreVendorPaths string   ignores any _vendor for module paths matching the given Glob pattern
+  -l, --layoutDir string           filesystem path to layout directory
+      --log                        enable Logging
+      --logFile string             log File path (if set, logging enabled automatically)
+      --minify                     minify any supported output format (HTML, XML etc.)
+      --noChmod                    don't sync permission mode of files
+      --noTimes                    don't sync modification time of files
+      --path-warnings              print warnings on duplicate target paths etc.
+      --print-mem                  print memory usage to screen at intervals
+      --quiet                      build in quiet mode
+      --renderToMemory             render to memory (only useful for benchmark testing)
+  -s, --source string              filesystem path to read files relative from
+      --templateMetrics            display metrics about template executions
+      --templateMetricsHints       calculate some improvement hints when combined with --templateMetrics
+  -t, --theme strings              themes to use (located in /themes/THEMENAME/)
+      --themesDir string           filesystem path to themes directory
+      --trace file                 write trace to file (not useful in general)
+  -v, --verbose                    verbose output
+      --verboseLog                 verbose logging
+  -w, --watch                      watch filesystem for changes and recreate as needed
+
+</code></pre>
 <h4 id="build-site">Build site</h4>
 <ol>
 <li>hugo new site .</li>
@@ -359,7 +426,7 @@ publishDir : &quot;./public&quot; # 静态站点存放路径，默认路径
 </code></pre>
 <h4 id="启动本地站点">启动本地站点</h4>
 <p>本地启动预览</p>
-<pre><code class="language-code">hugo server --bind=&quot;0.0.0.0&quot; -v -w -p 11311 -b http://192.168.7.221
+<pre><code class="language-code">hugo server --bind=&quot;0.0.0.0&quot; -v -w -p 11311 -b http://192.168.7.221 # -b --baseURL string
 </code></pre>
 <p>生成静态站点</p>
 <pre><code class="language-code">hugo --theme=pure --buildDrafts --config=muconfig.yml --baseUrl=&quot;http://192.168.7.221&quot;
@@ -409,13 +476,13 @@ $ ssh -T git@github.com
 </code></pre>
 <ol start="2">
 <li>
-<p>创建后端存储库：存储Hugo工作目录核心数据<br>
+<p>创建后端存储库：存储Hugo核心数据<br>
 Github blog source： blog<br>
 类型：Private(推荐)/Public<br>
 ssh key： <code>&lt;Private Key&gt;</code><br>
 配置类型：Secrets<br>
 配置变量： ACTIONS_DEPLOY_KEY   #参考流水线变量 deploy_key
-其他配置： 开启Allow write access 选项
+其他配置： 开启 Allow write access 选项
 默认branch： master</p>
 </li>
 <li>
@@ -479,7 +546,7 @@ git push origin master
 <ul>
 <li>执行发布脚本，访问站点<br>
 执行： ./deploy.sh<br>
-检查： ls ../public 检查生产静态站点数据，访问发布库<code>&lt;githubname/regittry&gt;.github.io</code>.<br>
+检查： ls ../public 检查生产静态站点数据，访问发布库<code>&lt;githubname/registry&gt;.github.io</code>.<br>
 访问： <a href="https://GithubName.github.io/wikibook.github.io/">https://GithubName.github.io/wikibook.github.io/</a></li>
 </ul>
 <h2 id="github-actions-流水线">GitHub Actions 流水线</h2>
@@ -543,11 +610,11 @@ git push origin master
 <h2 id="config-其他特殊配置项">config 其他特殊配置项</h2>
 <ul>
 <li>
-<p>保持分类的原始名字（false会做转小写处理）
+<p>保持分类的原始名字（false会做转小写处理）<br>
 preserveTaxonomyNames = true</p>
 </li>
 <li>
-<p>是否禁止URL Path转小写
+<p>是否禁止URL Path转小写<br>
 disablePathToLower = true</p>
 </li>
 <li>
